@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Challenge ONE Decodificador Turma 4</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+</head>
+     
+    <body>
+        <div class="estrutura">
+        <header>
+            <img src="./img/logo.png" alt="Logo da Alura">
+        </header>
+    
+    <main>
+        <section>
+            <!--Digitar o texto a ser criptografado-->
+            <textarea class="caixa-criptografa" id="digita-texto" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
+
+                <div class="icone">
+                    <img src="./img/icone.png" alt="Um incone de simbolto de exclamação.">
+                    <p class="">Apenas letras minúsculas e sem acento.</p>
+                </div>
+                
+                <div>
+                    <button onclick="criptografar()" class="btn-criptografar">Criptografar</button>
+                    <button onclick="descriptografar()" class="btn-descriptografar">Descriptografar</button>
+                </div>
+
+        </section>
+       
+        <section>
+            <!--Saída do texto criptofradado-->
+            <textarea disabled class="caixa-descriptografa" id="saida-texto" cols="20" rows="10"></textarea>
+           
+            <div id="mostra-conteudo">
+            <img class="img-ilustração" src="./img/ilustracao.png" alt="Garoto com lupa na mão">
+            
+            <div class="mensagem">
+                <p> Nenhuma mensagem encontrada</p>
+                <p class="p2"> Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            </div>
+            
+            <div id="oculta-conteudo">
+            <button onclick="CopiaCriptografia()"class="btn-copiar" id="copiar">Copiar</button>
+            </div>
+            
+        </section>
+    </main>
+    
+        <footer>
+            <div class="rodape">
+                <p>&#169; Desenvolvido por Denes Miranda | Challenge ONE - Oracle + Alura T4 <a href="https://github.com/Denesmiranda" target="_blank">
+                <img src="./img/img-github.svg" alt="GitHub"> <a href="https://www.linkedin.com/in/denesmiranda/" target="_blank">
+                    <i class="fa-brands fa-linkedin-in fa-2x corBranca"></i></p>
+                    
+                    
+            </div>
+    </footer>
+</div>
+<script src="https://kit.fontawesome.com/e801e4a6d3.js"></script> 
+    </body>
+
+    
+    
+    
+</html>
+
+<script src="script.js"></script>
